@@ -1,0 +1,40 @@
+@charset "utf-8";
+  .navbarp {
+      top: 25px;
+      background-color: #000000;
+
+
+        
+  }
+  
+  .navbarp li {
+      display: inline;
+      margin: 15px 0 15px 13px;
+      /*float: right;*/
+      border-right: 1px solid #bbb;
+      }
+
+     .navbarp li:last-child {
+        border-right: none;
+      }
+
+  
+  .navbarp a {
+      text-transform: uppercase;
+     
+      color:#ffffff;
+      font-weight: bold;
+      font-size: 22px;
+      text-decoration: none;
+      padding: 5px;
+      margin: 5px 15px 5px 5px;
+  }
+  .navbarp a:hover{
+    color: #000000;
+    text-decoration: underline;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px 15px 5px 5px;
+    border-radius: 10px;
+  }  

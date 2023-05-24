@@ -1,0 +1,74 @@
+.fundo {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background: url(../midia/tec1.jpg) no-repeat fixed; 
+    background-size: cover;
+    -webkit-background-size:cover;
+}
+
+
+.cartao{
+  width: 940px;
+  margin:25px 25px 25px 215px;
+  padding: 50px;
+  text-align: center;
+
+
+}
+
+.cartao li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  height: 250px;
+  vertical-align: top;
+  margin:1.5%;
+  padding: 10px ;
+  box-sizing: border-box;
+  /*esse box-sizing faz com que a proporção do width seja absoluta*/
+  /*borda arredondada (border: 2px solid #000000) */
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+/*isso muda a cor das coisas quando se passa o mouse*/
+.cartao li:hover {
+border-color: #000000;
+
+}.cartao li:active{
+  border-color: #000e2c;
+}
+
+.cartao li:hover h2{
+  font-size: 32px;
+}
+
+.cartao h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cartao-nome{
+font-size: 18px;
+font-variant: small-caps;
+float: left;
+}
+
+.cartao-ra {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 5px;
+  float: left;
+}
+
+.cartao img {
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  text-align: center
+}
+
