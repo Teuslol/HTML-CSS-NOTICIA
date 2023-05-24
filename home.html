@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/noticia.css">
+	<link rel="stylesheet" href="CSS/naveg.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="CSS/slide.css">
+    <title>Inicial - Home</title>
+</head>
+<body>
+	<nav class="navbarp">
+        <div>
+            <ul>
+                <li><a href="home.html"><i class="fa fa-home"></i></a></li>
+                <li><a href="news.html">News</a></li>
+                <li style="float:right"><a href="grupo.html">Sobre Nós<i class="fas fa-user-friends"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+	<div class="container">
+	<!--Abre-->
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="midia/elon.jpeg" width="760px" height="250px">
+			<div class="text"><h3 style="color: rgb(30, 30, 36);">Elon Musk diz à BBC que ser dono do Twitter tem sido 'muito doloroso'.<h3></div>
+			</div>
+			
+			<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="midia/chatgtp.webp" width="760px" height="250px"><br>
+			<div class="text"><h3 style="color: black;">ChatGPT e inteligência artificial avançada enfrentam novo impulso regulatório na Europa.</h3></div>
+			</div>
+			
+			<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="midia/startap.jpg" width="760px" height="250px">
+			<div class="text"><h3>Startups da América Latina estão prontas para a crise do SVB, diz partner da Riverwood.</h3></div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+			<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				}
+				</script>
+
+	<!--fecha-->
+
+			<h1>Notícias</h1>
+			<div class="article">
+				<h2>Crise Econômica</h2>
+				<img src="midia/crise.avif" alt="Imagem da notícia">
+				<p>Você sabia que o mercado de Tecnologia da Informação (TI) tem enfrentado uma crise econômica significativa? Sim, é verdade! Nos últimos anos, empresas do setor têm lutado para se manter à tona em meio a desafios financeiros e competitivos, resultando em uma diminuição na demanda por...</p>
+				<a href="news.html">Leia mais</a>
+			</div>
+			<div class="article">
+				<h2>internet</h2>
+				<img src="https://s2.glbimg.com/ek0FEMiLo8LhBdSxmspT84F6G1M=/1200x/smart/filters:cover():strip_icc()/s02.video.glbimg.com/x720/8213433.jpg" alt="Imagem da notícia">
+				<p>Empresas de tecnologia anunciam planos para expandir a conectividade de internet em áreas remotas e carentes de infraestrutura;</p>
+				<h5>Leia mais</h5>
+			</div>
+			<div class="article">
+				<h2>Bitcoin é confiavél?</h2>
+				<img src="https://www.infoescola.com/wp-content/uploads/2019/01/criptomoedas-bitcoin-608089037.jpg" alt="Imagem da notícia">
+				<p>Novas tecnologias de criptomoedas e fintechs estão mudando a forma como lidamos com o dinheiro e realizamos transações financeiras;</p>
+				<h5>Leia mais</h5>
+			</div>
+		</div>
+
+</body>
+</html>
